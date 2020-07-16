@@ -19,7 +19,7 @@ def remove_strawberry(contacts)
     data.each do |attributes, value|
       if attributes == :favorite_ice_cream_flavors
         value.each do |flavor|
-          value.remove[0]
+          value.chomp[0]
         end
       end
     end
